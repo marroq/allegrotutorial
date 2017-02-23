@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-Wall -I/usr/local/include -L/usr/local/lib
-ALLEGRO_CFLAGS=-Wall -I/usr/local/include -L/usr/local/lib -lallegro_image -lallegro -lallegro_dialog -lallegro_primitives
+ALLEGRO_CFLAGS=-Wall -I/usr/local/include -L/usr/local/lib -lallegro_image -lallegro -lallegro_dialog -lallegro_primitives -lallegro_font -lallegro_ttf
 
 display: allegro_display.c
 	$(CC) allegro_display.c -o display $(ALLEGRO_CFLAGS)
