@@ -26,7 +26,7 @@ int main(int argc, char **argv){
       fprintf(stderr, "Could not load 'pirulen.ttf'.\n");
       return -1;
    }
-
+   
    al_clear_to_color(al_map_rgb(50,10,70));
    al_draw_text(font, al_map_rgb(255,255,255), 640/2, (480/4),ALLEGRO_ALIGN_CENTRE, "Douglas!");
 
