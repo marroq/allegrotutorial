@@ -1,4 +1,5 @@
 CC=gcc
+CG=g++
 CFLAGS=-Wall -I/usr/local/include -L/usr/local/lib
 ALLEGRO_CFLAGS=-Wall -I/usr/local/include -L/usr/local/lib -lallegro_image -lallegro -lallegro_dialog -lallegro_primitives -lallegro_font -lallegro_ttf -lallegro_audio -lallegro_acodec
 
@@ -27,7 +28,7 @@ keyboard: allegro_keyboard.c
 	$(CC) allegro_keyboard.c -o keyboard $(ALLEGRO_CFLAGS)
 	
 thread: allegro_thread.c
-	$(CC) allegro_thread.c -o thread $(ALLEGRO_CFLAGS)
+	$(CG) allegro_thread.c -o thread $(ALLEGRO_CFLAGS)
 	
 addons: allegro_addons.c
 	$(CC) allegro_addons.c -o addon $(ALLEGRO_CFLAGS)

@@ -49,5 +49,6 @@ int main(int argc, char **argv){
 	
    al_destroy_display(display);
    al_destroy_sample(sample);
+   
    return 0;
 }
