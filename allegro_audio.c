@@ -50,5 +50,6 @@ int main(int argc, char **argv){
    al_destroy_display(display);
    al_destroy_sample(sample);
    
+   /*testing user in local machine*/
    return 0;
 }
